@@ -10,15 +10,29 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="overlay">
+        <div class="grid-container">
 
-    </div>
-    <button class="settings-btn">Settings</button>
-    <div class="settings-popup">
-        <span class="close-settings-btn">X</span>
-        <div class="settings-content">
-            <p>size: </p>
-            <input class="input-size" type="text">
+        </div>
+
+        <button class="settings-btn">Settings</button>
+
+        <div class="settings-popup-window">
+            <span class="close-settings-btn">X</span>
+
+            <div class="settings-content-container">
+                <div class="input-container">
+                    <p>Size: </p>
+                    <input class="input-size" type="text">
+                </div>
+
+                <div class="input-container">
+                    <p>Line Color: </p>
+                    <input class="input-line-color" type="text"> 
+                </div>
+                
+                <button class="save-btn">Save</button>
+            </div>
         </div>
     </div>
 </body>
