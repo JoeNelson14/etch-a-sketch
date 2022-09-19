@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch A Sketch</title>
+    <title>Pixel Creation</title>
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- css and js files -->
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js" defer></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="overlay">
-        <div class="grid-container">
-
-        </div>
-
-        <button class="settings-btn">Settings</button>
-
-        <div class="settings-popup-window">
-            <span class="close-settings-btn">X</span>
-
-            <div class="settings-content-container">
-                <div class="input-container">
-                    <p>Size: </p>
-                    <input class="input-size" type="text">
-                </div>
-
-                <div class="input-container">
-                    <p>Line Color: </p>
-                    <input class="input-line-color" type="text"> 
-                </div>
-                
-                <button class="save-btn">Save</button>
+    <h1 class="title">PIXEL CREATION</h1>
+    <div class="content-container">
+        <div class="settings-container">
+            <h2 class="settings-title">Settings</h2>
+            <label>
+                <input class="color-input" type="color" value="#000000">
+            </label>
+            <div class="button-container">
+                <button class="mode-button color">Color Mode</button>
+                <button class="mode-button rainbow">Rainbow Mode</button>
+                <button class="mode-button eraser">Eraser</button>
+                <button class="mode-button clear">Clear Screen</button>
             </div>
+            <input class="grid-size-slider" type="range" min="4" max="64" value="16">
+            <p class="grid-size-text">16 x 16</p>
+            
         </div>
+    
+        <div class="grid-container"></div>
     </div>
+    <footer>
+        <p>Copyright © 2022 Joe Nelson</p>
+    </footer>
 </body>
 </html>
